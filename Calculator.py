@@ -4,7 +4,7 @@
 class Item:
 
     # Initializing All Inputs Of The Item
-    def __init__(self, name, price, imported, exempted, quantity = 1):
+    def __init__(self, name, price, imported, exempted, quantity):
         self.name = name
         self.price = price
         self.imported = imported
