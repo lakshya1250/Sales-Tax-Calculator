@@ -53,13 +53,3 @@ class Receipt:
             receipt += f"{item.quantity} {item.name}: {item.price}\n"
         receipt += f"Sales Tax: {total_tax}\nTotal: {total_price}"
         return receipt
-
-# ----- Main Code -----
-
-# Making The Receipt Object And Passing The List Of Items
-purchases = (Item("Box Of Chocolates", 10.00, True, True), Item("Bottle Of Perfume", 47.50, True, False))
-bill = Receipt(purchases)
-
-# ----- Driver Code -----
-if __name__ =  = "__main__":
-	print(bill.get_receipt())
